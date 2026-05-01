@@ -1,0 +1,101 @@
+# =============================================================================
+# General .gitignore
+# =============================================================================
+
+# --- OS Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editor & IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# --- Logs & Temp ---
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+tmp/
+temp/
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+
+# --- Dependencies ---
+node_modules/
+vendor/
+.pnp
+.pnp.js
+
+# --- Build Output ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+*.min.js
+*.min.css
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+*.egg
+.mypy_cache/
+
+# --- Java / Kotlin ---
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# --- C / C++ ---
+*.o
+*.a
+*.so
+*.out
+
+# --- Archives ---
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# --- Coverage & Testing ---
+coverage/
+.coverage
+*.lcov
+htmlcov/
+.nyc_output/
