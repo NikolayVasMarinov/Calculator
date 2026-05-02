@@ -1,4 +1,3 @@
-from calculator.config import CONFIG_FILE
 from canvas import app, on_closing, on_state_change
 
 

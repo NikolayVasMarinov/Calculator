@@ -1,6 +1,5 @@
 import os
 import json
-from textwrap import indent
 
 CONFIG_FILE = "db/window_config.json"
 
@@ -32,12 +31,14 @@ def load_state():
 def save_geometry(geometry):
     config = load_config()
     config["geometry"] = geometry
+    os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
     with open(CONFIG_FILE, "w") as f:
         json.dump(config, f, indent=2)
 
 def save_state(state):
     config = load_config()
     config["state"] = state
+    os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
     with open(CONFIG_FILE, "w") as f:
         json.dump(config, f, indent=2)
 
