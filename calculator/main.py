@@ -1,7 +1,10 @@
+from calculator import render_calculator_screen
 from canvas import app, on_closing, on_state_change
 
 
 if __name__ == "__main__":
     app.protocol("WM_DELETE_WINDOW", on_closing)
     app.bind("<Configure>", on_state_change)
+
+    render_calculator_screen()
     app.mainloop()
